@@ -286,7 +286,7 @@ router.get('/', async (req, res) => {
                         const compressed = zlib.gzipSync(Buffer.from(credsJson)).toString('base64');
                         const uid = sock.user?.id;
                         if (uid) {
-                            await sock.sendMessage(uid, { text: `REAPER-XMD:${compressed}` });
+                            await sock.sendMessage(uid, { text: `PEAKY-BLINDERS-BOT:~${compressed}` });
                             await delay(1500);
                             await sock.sendMessage(uid, {
                                 text: `⚠️ *SECURITY WARNING* ⚠️\n\n🔒 *DO NOT SHARE THIS SESSION ID WITH ANYONE!*\n\nOnly share it with your trusted bot deployer.\n\n───────────────────────\n\n✨ *AMON TECH*\n\n📢 Join our channel:\nhttps://whatsapp.com/channel/0029VbBaJvI7IUYbtCeaPh0I\n\n🤖 Bot Repository:\nhttps://github.com/AmonTech1/REAPER-XMD`
