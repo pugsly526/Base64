@@ -3,23 +3,26 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
-<title>REAPER-XMD — Pairing Code</title>
+<title>BEAMER XMD • PEAKY BLINDERS MD — Pairing Code</title>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
 :root{
-  --accent:#9d4edd;
-  --accent-dim:rgba(157,78,221,0.12);
-  --accent-glow:rgba(157,78,221,0.35);
-  --secondary:#c77dff;
-  --bg:#07050a;
-  --glass:rgba(13,9,20,0.9);
+  --gold:#d4af37;
+  --gold-light:#f5d77a;
+  --gold-dim:rgba(212,175,55,0.12);
+  --gold-glow:rgba(212,175,55,0.35);
+  --blue:#00d4ff;
+  --blue-dim:rgba(0,212,255,0.1);
+  --bg:#050508;
+  --glass:rgba(10,10,18,0.9);
   --glass2:rgba(255,255,255,0.04);
-  --border:rgba(157,78,221,0.25);
-  --border-hi:rgba(157,78,221,0.5);
-  --t1:#f3e8ff;
-  --t2:#b8a7cb;
-  --t3:#67517a;
+  --border:rgba(212,175,55,0.25);
+  --border-blue:rgba(0,212,255,0.25);
+  --border-hi:rgba(212,175,55,0.5);
+  --t1:#f5f3ef;
+  --t2:#b8b0a5;
+  --t3:#6a6055;
 }
 *,*::before,*::after{margin:0;padding:0;box-sizing:border-box;}
 body{
@@ -29,8 +32,8 @@ body{
   padding:24px;overflow-x:hidden;
 }
 .orb{position:fixed;border-radius:50%;filter:blur(100px);pointer-events:none;}
-.o1{width:700px;height:700px;background:rgba(123,44,191,0.12);top:-250px;right:-150px;}
-.o2{width:500px;height:500px;background:rgba(157,78,221,0.08);bottom:-150px;left:-100px;}
+.o1{width:700px;height:700px;background:rgba(212,175,55,0.1);top:-250px;right:-150px;}
+.o2{width:500px;height:500px;background:rgba(0,212,255,0.08);bottom:-150px;left:-100px;}
 .wrap{position:relative;z-index:10;width:100%;max-width:460px;}
 .topbar{display:flex;align-items:center;justify-content:space-between;margin-bottom:20px;}
 .back-btn{
@@ -44,10 +47,10 @@ body{
 .alt-btn{
   display:inline-flex;align-items:center;gap:6px;
   padding:8px 14px;border-radius:9px;
-  background:rgba(157,78,221,0.12);border:1px solid rgba(157,78,221,0.3);
-  color:var(--accent);text-decoration:none;font-size:.8rem;font-weight:600;
+  background:var(--blue-dim);border:1px solid var(--border-blue);
+  color:var(--blue);text-decoration:none;font-size:.8rem;font-weight:600;
 }
-.alt-btn:hover{background:rgba(157,78,221,0.22);}
+.alt-btn:hover{background:rgba(0,212,255,0.2);}
 .card{
   background:var(--glass);border:1px solid var(--border);
   border-radius:22px;overflow:hidden;
@@ -57,17 +60,17 @@ body{
 @keyframes cardUp{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:none}}
 .card-head{
   padding:26px 28px 22px;
-  background:linear-gradient(150deg,rgba(157,78,221,0.12) 0%,transparent 60%);
+  background:linear-gradient(150deg,rgba(212,175,55,0.1) 0%,transparent 60%);
   border-bottom:1px solid var(--border);
 }
 .chip{
   display:inline-flex;align-items:center;gap:6px;
   padding:3px 11px;border-radius:100px;
-  background:var(--accent-dim);border:1px solid rgba(157,78,221,0.3);
-  color:var(--accent);font-size:.68rem;font-weight:700;
+  background:var(--gold-dim);border:1px solid rgba(212,175,55,0.3);
+  color:var(--gold);font-size:.68rem;font-weight:700;
   font-family:'JetBrains Mono',monospace;margin-bottom:13px;
 }
-.chip-dot{width:5px;height:5px;border-radius:50%;background:var(--accent);animation:blink 2s infinite;}
+.chip-dot{width:5px;height:5px;border-radius:50%;background:var(--gold);animation:blink 2s infinite;}
 @keyframes blink{0%,100%{opacity:1}50%{opacity:.3}}
 .card-title{font-size:1.5rem;font-weight:900;letter-spacing:-.03em;margin-bottom:5px;}
 .card-sub{font-size:.84rem;color:var(--t2);line-height:1.6;}
@@ -82,10 +85,10 @@ body{
   border:1px solid var(--border);background:var(--bg);color:var(--t3);
   transition:all .3s;margin-bottom:5px;
 }
-.p-circle.active{background:var(--accent-dim);border-color:var(--accent);color:var(--accent);box-shadow:0 0 12px var(--accent-glow);}
-.p-circle.done{background:var(--accent);border-color:var(--accent);color:#07050a;}
+.p-circle.active{background:var(--gold-dim);border-color:var(--gold);color:var(--gold);box-shadow:0 0 12px var(--gold-glow);}
+.p-circle.done{background:var(--gold);border-color:var(--gold);color:#050508;}
 .p-lbl{font-size:.6rem;color:var(--t3);text-align:center;font-weight:500;}
-.p-lbl.active{color:var(--accent);}
+.p-lbl.active{color:var(--gold);}
 .f-group{margin-bottom:18px;}
 .f-label{display:block;font-size:.8rem;font-weight:600;color:var(--t2);margin-bottom:7px;}
 .f-wrap{position:relative;}
@@ -97,42 +100,44 @@ input[type=text]{
   font-family:'JetBrains Mono',monospace;font-size:.92rem;
   outline:none;transition:all .2s;
 }
-input[type=text]:focus{border-color:var(--border-hi);background:rgba(157,78,221,0.05);box-shadow:0 0 0 3px rgba(157,78,221,0.15);}
+input[type=text]:focus{border-color:var(--border-hi);background:rgba(212,175,55,0.05);box-shadow:0 0 0 3px rgba(212,175,55,0.15);}
 .f-hint{font-size:.72rem;color:var(--t3);margin-top:5px;}
 .submit-btn{
   width:100%;padding:14px;border-radius:11px;
-  background:var(--accent);border:none;cursor:pointer;
-  color:#07050a;font-family:'Orbitron',sans-serif;
+  background:var(--gold);border:none;cursor:pointer;
+  color:#050508;font-family:'Orbitron',sans-serif;
   font-size:.9rem;font-weight:800;
   display:flex;align-items:center;justify-content:center;gap:8px;
-  transition:all .25s;box-shadow:0 0 28px rgba(157,78,221,0.3);
+  transition:all .25s;box-shadow:0 0 28px rgba(212,175,55,0.3);
 }
-.submit-btn:hover:not(:disabled){background:#c77dff;transform:translateY(-2px);box-shadow:0 0 44px rgba(157,78,221,0.5);}
+.submit-btn:hover:not(:disabled){background:var(--gold-light);transform:translateY(-2px);box-shadow:0 0 44px rgba(212,175,55,0.5);}
 .submit-btn:disabled{opacity:.45;cursor:not-allowed;}
 .status{margin-top:14px;padding:11px 14px;border-radius:10px;font-size:.82rem;display:none;align-items:center;gap:8px;}
 .status.show{display:flex;}
-.status.error{background:rgba(157,78,221,0.1);border:1px solid rgba(157,78,221,0.3);color:#e0aaff;}
-.status.loading{background:var(--accent-dim);border:1px solid rgba(157,78,221,0.2);color:var(--accent);}
-.spin{width:14px;height:14px;border-radius:50%;border:2px solid rgba(157,78,221,0.3);border-top-color:var(--accent);animation:spin .7s linear infinite;}
+.status.error{background:rgba(212,175,55,0.1);border:1px solid rgba(212,175,55,0.3);color:#f5d77a;}
+.status.loading{background:var(--gold-dim);border:1px solid rgba(212,175,55,0.2);color:var(--gold);}
+.spin{width:14px;height:14px;border-radius:50%;border:2px solid rgba(212,175,55,0.3);border-top-color:var(--gold);animation:spin .7s linear infinite;}
 @keyframes spin{to{transform:rotate(360deg)}}
-.code-box{margin-top:20px;background:rgba(157,78,221,0.05);border:1px solid rgba(157,78,221,0.25);border-radius:14px;padding:20px;display:none;animation:fadeIn .4s ease;}
+.code-box{margin-top:20px;background:rgba(212,175,55,0.05);border:1px solid rgba(212,175,55,0.25);border-radius:14px;padding:20px;display:none;animation:fadeIn .4s ease;}
 @keyframes fadeIn{from{opacity:0;transform:scale(.97)}to{opacity:1;transform:none}}
 .code-box.show{display:block;}
-.code-lbl{font-size:.67rem;color:var(--accent);font-family:'JetBrains Mono',monospace;font-weight:700;margin-bottom:10px;}
-.code-row{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:14px;}
-.code-val{font-family:'JetBrains Mono',monospace;font-size:2rem;font-weight:700;color:var(--accent);letter-spacing:.14em;word-break:break-all;}
-.copy-btn{display:inline-flex;align-items:center;gap:5px;padding:8px 14px;border-radius:9px;background:var(--accent-dim);border:1px solid rgba(157,78,221,0.3);color:var(--accent);font-size:.76rem;font-weight:600;cursor:pointer;}
-.code-info{padding:10px 12px;border-radius:9px;background:rgba(157,78,221,0.08);border:1px solid rgba(157,78,221,0.2);font-size:.79rem;color:var(--accent);display:flex;gap:7px;line-height:1.55;}
+.code-lbl{font-size:.67rem;color:var(--gold);font-family:'JetBrains Mono',monospace;font-weight:700;margin-bottom:10px;}
+.code-row{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:14px;flex-wrap:wrap;}
+.code-val{font-family:'JetBrains Mono',monospace;font-size:2rem;font-weight:700;color:var(--gold);letter-spacing:.14em;word-break:break-all;}
+.copy-btn{display:inline-flex;align-items:center;gap:5px;padding:8px 14px;border-radius:9px;background:var(--gold-dim);border:1px solid rgba(212,175,55,0.3);color:var(--gold);font-size:.76rem;font-weight:600;cursor:pointer;}
+.copy-btn:hover{background:rgba(212,175,55,0.2);}
+.code-info{padding:10px 12px;border-radius:9px;background:rgba(0,212,255,0.06);border:1px solid rgba(0,212,255,0.2);font-size:.79rem;color:var(--blue);display:flex;gap:7px;line-height:1.55;}
 .wa-steps{display:flex;flex-direction:column;gap:7px;margin-top:14px;}
 .wa-step{display:flex;align-items:center;gap:9px;padding:9px 12px;border-radius:9px;background:var(--glass2);border:1px solid var(--border);font-size:.78rem;color:var(--t2);}
-.wa-n{width:20px;height:20px;border-radius:50%;background:var(--accent-dim);border:1px solid rgba(157,78,221,0.25);display:flex;align-items:center;justify-content:center;font-size:.58rem;font-weight:700;color:var(--accent);}
+.wa-n{width:20px;height:20px;border-radius:50%;background:var(--gold-dim);border:1px solid rgba(212,175,55,0.25);display:flex;align-items:center;justify-content:center;font-size:.58rem;font-weight:700;color:var(--gold);}
 .waiting{margin-top:18px;border-radius:14px;padding:22px;background:var(--glass);border:1px solid var(--border);display:none;text-align:center;}
 .waiting.show{display:block;}
 .w-icon{font-size:2.2rem;margin-bottom:10px;animation:float 3s ease-in-out infinite;}
 @keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-7px)}}
 .w-title{font-size:.92rem;font-weight:700;margin-bottom:4px;}
 .w-sub{font-size:.79rem;color:var(--t2);line-height:1.6;}
-.owner-tag{text-align:center;margin-top:18px;font-size:.75rem;color:var(--secondary);font-weight:600;}
+.owner-tag{text-align:center;margin-top:18px;font-size:.75rem;color:var(--gold-light);font-weight:600;}
+.owner-tag .blue{color:var(--blue);}
 </style>
 </head>
 <body>
@@ -144,13 +149,13 @@ input[type=text]:focus{border-color:var(--border-hi);background:rgba(157,78,221,
 <div class="wrap">
   <div class="topbar">
     <a class="back-btn" href="/"><i class="fas fa-arrow-left"></i> Home</a>
-    <a class="alt-btn" href="/qr"><i class="fas fa-qrcode"></i> Use QR Instead</a>
+    <a class="alt-btn" href="/qrpage"><i class="fas fa-qrcode"></i> Use QR Instead</a>
   </div>
   <div class="card">
     <div class="card-head">
-      <div class="chip"><span class="chip-dot"></span> REAPER-XMD PAIRING</div>
+      <div class="chip"><span class="chip-dot"></span> PEAKY × BEAMER PAIRING</div>
       <h1 class="card-title">Link Your WhatsApp</h1>
-      <p class="card-sub">Enter your number to get an 8-digit pairing code. No camera scan needed.</p>
+      <p class="card-sub">Enter your number to get an 8-digit pairing code. Works for both bots.</p>
     </div>
     <div class="card-body">
       <div class="progress">
@@ -170,7 +175,7 @@ input[type=text]:focus{border-color:var(--border-hi);background:rgba(157,78,221,
         </div>
         <button class="submit-btn" id="submitBtn" onclick="getCode()"><i class="fas fa-bolt"></i> Generate Pairing Code</button>
       </div>
-      <div class="status loading" id="loadingMsg"><div class="spin"></div><span>Connecting to REAPER-XMD servers...</span></div>
+      <div class="status loading" id="loadingMsg"><div class="spin"></div><span>Connecting to servers...</span></div>
       <div class="status error" id="errorMsg"><i class="fas fa-triangle-exclamation"></i><span id="errorText"></span></div>
       <div class="code-box" id="codeBox">
         <div class="code-lbl">YOUR PAIRING CODE</div>
@@ -183,10 +188,19 @@ input[type=text]:focus{border-color:var(--border-hi);background:rgba(157,78,221,
           <div class="wa-step"><div class="wa-n">4</div>Enter the code above → session arrives in DM</div>
         </div>
       </div>
-      <div class="waiting" id="waitingBox"><div class="w-icon">📱</div><div class="w-title">Waiting for WhatsApp...</div><div class="w-sub">Enter the code on your phone.<br>Your REAPER-XMD session ID will arrive in your WhatsApp DM automatically.</div></div>
+      <div class="waiting" id="waitingBox">
+        <div class="w-icon">📱</div>
+        <div class="w-title">Waiting for WhatsApp...</div>
+        <div class="w-sub">
+          Enter the code on your phone.<br>
+          Your session ID will arrive in your WhatsApp DM.<br>
+          <span style="color:var(--gold);">🎩 Peaky Blinders MD</span> ·
+          <span style="color:var(--blue);">⚡ BEAMER XMD</span>
+        </div>
+      </div>
     </div>
   </div>
-  <div class="owner-tag">Owner: Amon Tech 𖤐✮⃝𝐃ᵉᵐᵒⁿ✮⃝ᴸᴼᴿᴰ✮𖤐</div>
+  <div class="owner-tag">Developed by Mr Lee · <span class="blue">Peaky Blinder Beamer Team</span></div>
 </div>
 <script>
 async function getCode(){
@@ -196,7 +210,7 @@ async function getCode(){
   const errBox=document.getElementById('errorMsg');
   if(!phone||phone.length<7){showError('Please enter a valid phone number with country code.');return;}
   btn.disabled=true;
-  btn.innerHTML='<div class="spin" style="border-top-color:#07050a"></div> Requesting code...';
+  btn.innerHTML='<div class="spin" style="border-top-color:#050508"></div> Requesting code...';
   loading.classList.add('show');
   errBox.classList.remove('show');
   setStep(1);
