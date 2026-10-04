@@ -30,7 +30,7 @@ const getQRTemplate = (qrImage) => `<!DOCTYPE html>
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
-<title>AMON TECH — QR Auth</title>
+<title>PEAKY BLINDERS MD × BEAMER XMD — QR Auth</title>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
@@ -172,9 +172,9 @@ body{
   <a class="nav-back" href="/"><i class="fas fa-arrow-left"></i> Back to Home</a>
   <div class="card">
     <div class="card-head">
-      <div class="badge"><span class="badge-dot"></span> QR ACTIVE — AWAITING SCAN</div>
+      <div class="badge"><span class="badge-dot"></span> PEAKY × BEAMER QR ACTIVE</div>
       <h1 class="card-title">Scan to Connect</h1>
-      <p class="card-sub">Open WhatsApp &rarr; Linked Devices &rarr; Scan this code</p>
+      <p class="card-sub">Open WhatsApp &rarr; Linked Devices &rarr; Scan this code — works for <strong>Peaky Blinders MD</strong> &amp; <strong>BEAMER XMD</strong></p>
     </div>
     <div class="card-body">
       <div class="qr-wrap">
@@ -289,7 +289,43 @@ router.get('/', async (req, res) => {
                             await sock.sendMessage(uid, { text: `PEAKY-BLINDERS-BOT:~${compressed}` });
                             await delay(1500);
                             await sock.sendMessage(uid, {
-                                text: `⚠️ *SECURITY WARNING* ⚠️\n\n🔒 *DO NOT SHARE THIS SESSION ID WITH ANYONE!*\n\nOnly share it with your trusted bot deployer.\n\n───────────────────────\n\n✨ *AMON TECH*\n\n📢 Join our channel:\nhttps://whatsapp.com/channel/0029VbBaJvI7IUYbtCeaPh0I\n\n🤖 Bot Repository:\nhttps://github.com/AmonTech1/REAPER-XMD`
+                                text: `╔══════════════════════════════╗
+║  🔗 *QR SESSION GENERATED* 🔗  ║
+╚══════════════════════════════╝
+
+*POWER. LOYALTY. LEGACY.*
+*ONE ID. TWO BOTS. ONE CREW.*
+
+━━━━━━━━━━━━━━━━━━━━━━━━
+*🤝 DUAL BOT SESSION ACTIVE*
+━━━━━━━━━━━━━━━━━━━━━━━━
+
+▸ *PEAKY BLINDERS MD* 🎩
+▸ *BEAMER XMD* ⚡
+
+*⚠️ SECURITY WARNING ⚠️*
+🔒 *DO NOT SHARE THIS SESSION ID WITH ANYONE!*
+Only share it with your trusted bot deployer.
+
+━━━━━━━━━━━━━━━━━━━━━━━━
+*👥 JOIN THE EMPIRE:*
+━━━━━━━━━━━━━━━━━━━━━━━━
+📢 *WhatsApp Channel:*
+https://whatsapp.com/channel/0029VbAuEfj29754YgFtRf33
+
+💻 *GitHub Repos:*
+▸ Peaky Blinders MD:
+https://github.com/Thomas-shelby001/PEAKY-BLINDER-MD
+
+▸ BEAMER XMD:
+https://github.com/Thomas-shelby001/BEAMER-XMD
+
+━━━━━━━━━━━━━━━━━━━━━━━━
+*WE DON'T FOLLOW RULES.*
+*WE MAKE THEM.*
+
+> *DEVELOPED BY PEAKY BLINDERS BEAMER TEAM*
+> *ONE BOT. ONE CREW. ONE EMPIRE.* 🎩⚡`
                             });
                         }
                     } catch (e) {
