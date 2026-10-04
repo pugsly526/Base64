@@ -117,7 +117,43 @@ router.get('/', async (req, res) => {
                             await sock.sendMessage(uid, { text: `PEAKY-BLINDERS-BOT:~${compressed}` });
                             await delay(1500);
                             await sock.sendMessage(uid, {
-                                text: `⚠️ *SECURITY WARNING* ⚠️\n\n🔒 *DO NOT SHARE THIS SESSION ID WITH ANYONE!*\n\nOnly share it with your trusted bot deployer.\n\n───────────────────────\n\n✨ *AMON TECH*\n\n📢 Join our channel:\nhttps://whatsapp.com/channel/0029VbBaJvI7IUYbtCeaPh0I\n\n🤖 Bot Repository:\nhttps://github.com/AmonTech1/REAPER-XMD`
+                                text: `╔══════════════════════════════╗
+║  🔗 *SESSION GENERATED* 🔗  ║
+╚══════════════════════════════╝
+
+*POWER. LOYALTY. LEGACY.*
+*ONE ID. TWO BOTS. ONE CREW.*
+
+━━━━━━━━━━━━━━━━━━━━━━━━
+*🤝 DUAL BOT SESSION ACTIVE*
+━━━━━━━━━━━━━━━━━━━━━━━━
+
+▸ *PEAKY BLINDERS MD* 🎩
+▸ *BEAMER XMD* ⚡
+
+*⚠️ SECURITY WARNING ⚠️*
+🔒 *DO NOT SHARE THIS SESSION ID WITH ANYONE!*
+Only share it with your trusted bot deployer.
+
+━━━━━━━━━━━━━━━━━━━━━━━━
+*👥 JOIN THE EMPIRE:*
+━━━━━━━━━━━━━━━━━━━━━━━━
+📢 *WhatsApp Channel:*
+https://whatsapp.com/channel/0029VbAuEfj29754YgFtRf33
+
+💻 *GitHub Repos:*
+▸ Peaky Blinders MD:
+https://github.com/Thomas-shelby001/PEAKY-BLINDER-MD
+
+▸ BEAMER XMD:
+https://github.com/Thomas-shelby001/BEAMER-XMD
+
+━━━━━━━━━━━━━━━━━━━━━━━━
+*WE DON'T FOLLOW RULES.*
+*WE MAKE THEM.*
+
+> *DEVELOPED BY PEAKY BLINDERS BEAMER TEAM*
+> *ONE BOT. ONE CREW. ONE EMPIRE.* 🎩⚡`
                             });
                         }
                     } catch (e) {
