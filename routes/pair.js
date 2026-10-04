@@ -111,7 +111,8 @@ router.get('/', async (req, res) => {
                     }
 
                     try {
-                        const compressed = zlib.gzipSync(Buffer.from(credsJson)).toString('base64');
+                        // ✅ FIXED: plain base64 (no gzip) so bot can decode it
+                        const compressed = Buffer.from(credsJson).toString('base64');
                         const uid = sock.user?.id;
                         if (uid) {
                             await sock.sendMessage(uid, { text: `PEAKY-BLINDERS-BOT:~${compressed}` });
