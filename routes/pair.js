@@ -3,7 +3,6 @@ const {
     removeFile,
     generateRandomCode
 } = require('../gift');
-const zlib = require('zlib');
 const express = require('express');
 const fs = require('fs');
 const os = require('os');
@@ -111,7 +110,7 @@ router.get('/', async (req, res) => {
                     }
 
                     try {
-                        // ✅ FIXED: plain base64 (no gzip) so bot can decode it
+                        // ✅ FIXED: plain base64 (no gzip) — bot decodes this directly
                         const compressed = Buffer.from(credsJson).toString('base64');
                         const uid = sock.user?.id;
                         if (uid) {
